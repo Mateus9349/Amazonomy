@@ -1,0 +1,228 @@
+body {
+    background-color: rgba(4, 56, 4, 0.685);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #132b13;
+    min-height: 80vh;
+    max-height: 80vh;
+    width: 100vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    margin-bottom: 10%;
+    width: 100vw;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.especie {
+    margin-bottom: 5%;
+}
+
+.funciona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #132b13;
+    border-radius: 10%;
+}
+
+.container-funciona {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.funciona p {
+    color: rgb(229, 234, 239);
+    width: 20%;
+    font-size: 25px;
+}
+
+.img-funciona-texto {
+    max-width: 30vw;
+}
+
+.img-funciona-fluxo {
+    max-width: 50vw;
+}
+
+.alinhar-imagens-horizontal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.alinhar-imagens-horizontal img {
+    max-width: 8%;
+    max-height: 70%;
+    border-radius: 100%;
+}
+
+.passos img {
+    border-radius: 85px;
+    width: 100%;
+    height: 100vh;
+}
+
+.empresas {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 25px;
+    background-color: #132b13;
+}
+
+.empresas img {
+    max-height: 80vh;
+    border-radius: 20%;
+}
+
+.nosso-legado {
+    display: grid;
+    grid-template-areas:
+        'title title title'
+        'ambiental social cientifico'
+    ;
+    gap: 10%;
+    align-content: space-around;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.title {
+    grid-area: title;
+    margin-left: 8%;
+}
+
+.ambiental {
+    grid-area: ambiental;
+}
+
+.social {
+    grid-area: social;
+}
+
+.cientifico {
+    grid-area: cientifico;
+}
+
+.nosso-legado h2,
+.title h1 {
+    color: white;
+}
+
+.nosso-legado h3,
+.nosso-legado ul {
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(19, 43, 19);
+    background: linear-gradient(360deg, rgba(19, 43, 19, 1) 0%, rgba(82, 118, 82, 1) 100%);
+}
+
+.apoiadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 50%;
+}
+
+.apoiadores img {
+    width: 50%;
+    border-radius: 100%;
+    height: 90%;
+}
+
+
+@media only screen and (max-width: 767px){
+    
+    body{
+        display: block;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .navbar, .navbar img{
+        min-height: 30vh;
+        width: 100vw;
+        background: none;
+        padding: 0;
+        display: block;
+    }
+
+    .especie{
+        margin-top: 5px;
+    }
+
+    .container-funciona{
+        margin-bottom: 25px;
+        padding: 0;
+        height: 100%;
+        max-height: auto;
+        display: block; 
+    }
+    .alinhar-imagens-horizontal{
+        margin-top: 10px;
+    }
+
+
+    .passos{
+        display: none;
+    }
+
+    .empresas{
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    .img-preco-especies{
+        width: 70%;
+        margin-top: 5px;
+    }
+
+    .nosso-legado{
+        display: block;
+        height: max-content;
+        text-align: center;
+    }
+
+    footer{
+        display: block;
+        height: 10rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .apoiadores{
+        display: flex;
+        max-width: 100vw;
+    }
+    .apoiadores img{
+        max-width: 60%;
+        height: 3rem;
+    }
+    .contato p{ 
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+        color: white;
+    }
+}
