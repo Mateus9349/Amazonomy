@@ -213,10 +213,11 @@ footer {
     }
     .apoiadores{
         display: flex;
+        justify-content: space-between;
         max-width: 100vw;
     }
     .apoiadores img{
-        max-width: 60%;
+        max-width: 3rem;
         height: 3rem;
     }
     .contato p{ 
