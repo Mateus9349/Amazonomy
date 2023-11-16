@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,500&display=swap');
+
+
 body {
+    font-family: 'Josefin Sans', sans-serif;
     background-color: rgba(4, 56, 4, 0.685);
     box-sizing: border-box;
     display: flex;
@@ -6,15 +10,21 @@ body {
     gap: 25px;
     max-width: 100vw;
     overflow-x: hidden;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: center;
     background-color: #132b13;
-    min-height: 80vh;
+    min-height: 50vh;
     max-height: 80vh;
     width: 100vw;
+    margin: 0;
+}
+.navbar img{
+    height: 100%;
+    margin-top: 0;
 }
 
 img {
@@ -133,23 +143,54 @@ section {
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     background: rgb(19, 43, 19);
     background: linear-gradient(360deg, rgba(19, 43, 19, 1) 0%, rgba(82, 118, 82, 1) 100%);
+    color: white;
+    width: 100%;
 }
 
 .apoiadores {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.apoiadores img {
+    width: 10rem;
+    border-radius: 100%;
+    height: 10rem;
 }
 
-.apoiadores img {
-    width: 50%;
-    border-radius: 100%;
-    height: 90%;
+.contato{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.redes{
+    display: flex;
+    font-size: 40px;
+    gap: 25px;
+    margin: 5% 0 5% 5%;
+}
+.redes a{
+    color: aliceblue;
+}
+.redes a:hover{
+    color: #132b13;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 25px;
+    font-size: 20px;
+}
+.email p{
+    display: flex;
+}
+.email p span{
+    margin-left: 10px;
 }
 
 
@@ -157,8 +198,10 @@ footer {
     
     body{
         display: block;
-        width: 100vw;
+        box-sizing: border-box;
+        max-width: 100vw;
         margin: 0;
+        padding: 0;
     }
 
     .navbar, .navbar img{
@@ -205,9 +248,11 @@ footer {
         text-align: center;
     }
 
+
+
+
     footer{
         display: block;
-        height: 10rem;
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -220,10 +265,27 @@ footer {
         max-width: 3rem;
         height: 3rem;
     }
+    .contato{
+        display: block;
+        height: 100%;
+        margin-bottom: 0;
+    }
     .contato p{ 
         display: flex;
         justify-content: space-around;
         margin-top: 25px;
         color: white;
+    }
+    .redes{
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .redes p{
+        display: none;
+    }
+    .email{
+        align-items: center;
+        margin-left: 1px;
     }
 }
