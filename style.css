@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,500&display=swap');
 
+[data-aos="fade-up"] {
+    opacity: 0;
+    
+    transition: opacity 1.5s ease-in-out;
+
+    transform: translate(20px, 40px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+}
+
+
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -22,7 +35,8 @@ header {
     width: 100vw;
     margin: 0;
 }
-.navbar img{
+
+.navbar img {
     height: 100%;
     margin-top: 0;
 }
@@ -50,6 +64,7 @@ section {
     background-color: #132b13;
     border-radius: 10%;
 }
+
 
 .container-funciona {
     display: flex;
@@ -110,7 +125,6 @@ section {
     gap: 10%;
     align-content: space-around;
     box-sizing: border-box;
-    max-width: 100%;
     margin-bottom: 25px;
 }
 
@@ -155,48 +169,54 @@ footer {
     justify-content: space-between;
     margin-bottom: 5%;
 }
+
 .apoiadores img {
     width: 10rem;
     border-radius: 100%;
     height: 10rem;
 }
 
-.contato{
+.contato {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
 }
-.redes{
+
+.redes {
     display: flex;
     font-size: 40px;
     gap: 25px;
     margin: 5% 0 5% 5%;
 }
-.redes a{
+
+.redes a {
     color: aliceblue;
 }
-.redes a:hover{
+
+.redes a:hover {
     color: #132b13;
 }
 
-.email{
+.email {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 25px;
     font-size: 20px;
 }
-.email p{
+
+.email p {
     display: flex;
 }
-.email p span{
+
+.email p span {
     margin-left: 10px;
 }
 
 
-@media only screen and (max-width: 767px){
-    
-    body{
+@media only screen and (max-width: 767px) {
+
+    body {
         display: block;
         box-sizing: border-box;
         max-width: 100vw;
@@ -204,7 +224,8 @@ footer {
         padding: 0;
     }
 
-    .navbar, .navbar img{
+    .navbar,
+    .navbar img {
         min-height: 30vh;
         width: 100vw;
         background: none;
@@ -212,37 +233,39 @@ footer {
         display: block;
     }
 
-    .especie{
+    .especie {
         margin-top: 5px;
     }
 
-    .container-funciona{
+    .container-funciona {
         margin-bottom: 25px;
         padding: 0;
         height: 100%;
         max-height: auto;
-        display: block; 
+        display: block;
     }
-    .alinhar-imagens-horizontal{
+
+    .alinhar-imagens-horizontal {
         margin-top: 10px;
     }
 
 
-    .passos{
+    .passos {
         display: none;
     }
 
-    .empresas{
+    .empresas {
         display: block;
         margin: 0;
         text-align: center;
     }
-    .img-preco-especies{
+
+    .img-preco-especies {
         width: 70%;
         margin-top: 5px;
     }
 
-    .nosso-legado{
+    .nosso-legado {
         display: block;
         height: max-content;
         text-align: center;
@@ -251,40 +274,47 @@ footer {
 
 
 
-    footer{
+    footer {
         display: block;
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    .apoiadores{
+
+    .apoiadores {
         display: flex;
         justify-content: space-between;
         max-width: 100vw;
     }
-    .apoiadores img{
+
+    .apoiadores img {
         max-width: 3rem;
         height: 3rem;
     }
-    .contato{
+
+    .contato {
         display: block;
         height: 100%;
         margin-bottom: 0;
     }
-    .contato p{ 
+
+    .contato p {
         display: flex;
         justify-content: space-around;
         margin-top: 25px;
         color: white;
     }
-    .redes{
+
+    .redes {
         justify-content: center;
         align-items: center;
         font-size: 25px;
     }
-    .redes p{
+
+    .redes p {
         display: none;
     }
-    .email{
+
+    .email {
         align-items: center;
         margin-left: 1px;
     }
